@@ -1,5 +1,187 @@
 @charset "utf-8";
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6C6C6F;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
 .inner {
+    max-width: 1200px;
+    width: 85%;
     margin-inline: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+header nav {
+    display: grid;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #123D88;
+}
+
+header a {
+    padding-block: 40px;
+    text-align: center;
+}
+
+.mainvisual {
+    background: url(./images/bg_mainvisual.png) no-repeat center center;
+    padding-block: 280px 160px;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.mainvisual p {
+    margin-bottom: 60px;
+}
+
+.btn {
+    line-height: 1;
+    display: inline-block;
+    width: 200px;
+    padding-block: 20px;
+    border-radius: 27.5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .btn {
+    background-color: #F87624;
+}
+
+header h2 {
+    color: #fff;
+}
+
+main section {
+    padding-block: 120px;
+}
+
+.what_we {
+    background-color: #F7FAFF;
+}
+
+.what_we .inner {
+    text-align: center;
+}
+
+main h2 {
+    color: #000;
+}
+
+.what_we p {
+    margin-bottom: 80px;
+}
+
+.what_we .group {
+    display: grid;
+    gap: 60px;
+    justify-content: center;
+}
+
+.what_we .group article {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 360px;
+    padding-block: 60px 75px;
+}
+
+.what_we .group .pick {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+main h3 {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #256BE6;
+    margin-bottom: 20px;
+}
+
+.cpSites .p1 {
+    margin-bottom: 40px;
+}
+
+.cpSites .p2 {
+    margin-bottom: 60px;
+}
+
+main .btn {
+    color: #fff;
+    background-color: #256BE6;
+}
+
+main .content {
+    margin-bottom: 100px;
+}
+
+.features {
+    background-color: #F7FAFF;
+}
+
+.features .sentences {
+    margin-bottom: 60px;
+}
+
+.features .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    color: #fff;
+    background-color: #123D88;
+    padding-block: 80px 50px;
+}
+
+footer p {
+    font-size: 15px;
+    text-align: right;
+}
+
+@media(width>700px) {
+
+    .header p {
+        width: 700px;
+    }
+
+    .what_we p {
+        margin-inline: auto;
+        width: 700px;
+    }
+
+    .what_we .group {
+        grid-auto-flow: column;
+    }
+
+    .cpSites .inner {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 90px;
+    }
+
+    .features .inner {
+        display: flex;
+        gap: 90px;
+    }
 }
