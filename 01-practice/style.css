@@ -161,8 +161,9 @@ footer p {
 
 @media(width>700px) {
 
-    .header p {
+    .mainvisual p {
         width: 700px;
+        margin-inline: auto;
     }
 
     .what_we p {
