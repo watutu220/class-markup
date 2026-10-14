@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+body {
+    color: #6c6c6f;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.75;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    padding: 20px 0;
+    background-color: #256BE6;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 27.5px;
+}
+
+.btn--info {
+    background-color: #2DBE61;
+}
+
+.btn--warning {
+    background-color: #F87624;
+}
+
+
+.btn--outline {
+    background-color: transparent;
+
+}
+
+.header {
+    padding: 30px 0;
+    background-color: #123D88;
+}
+
+.header__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-inline: auto;
+}
+
+/* モジュール(modules) */
+.intro__catch {
+    margin-bottom: 20px;
+    color: #123D88;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+.intro__title {
+    margin-bottom: 30px;
+    color: #262934;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.intro__content {
+    display: grid;
+    row-gap: 40px;
+}
+
+.card__icon {
+    margin-bottom: 40px;
+}
+
+.card__title {
+    margin-bottom: 20px;
+    color: #2F2F35;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.footer {
+    padding: 30px 0 50px;
+    background-color: #123D88;
+}
+
+.footer__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-inline: auto;
+}
+
+.footer__copyright {
+    text-decoration-color: #fff;
+    text-align: right;
+}
+
+.footer__copyright small {
+    font-size: 15px;
+}
+
+.features {
+    padding: 80px 0;
+}
+
+.features__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 96px;
+    align-items: center;
+}
+
+.features__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px 44px;
+}
+
+.payment {
+    padding: 80px 0;
+    background-color: #F7FAFF;
+}
+
+.payment__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 96px;
+    align-items: center;
+}
+
+/* service.html */
+.wedo {
+    padding: 80px 0;
+}
+
+.wedo__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wedo__info {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.wedo__list {
+    padding: 60px;
+    background-color: #F7FAFF;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 54px;
+}
+
+.wedo__item {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.wedo__item .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offer {
+    padding: 80px 0;
+    background-color: #505050;
+    color: #fff;
+}
+
+.offer__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offer__info {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offer__info .intro__title {
+    color: #fff;
+}
+
+.offer__info .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* help.html */
+.fees {
+    padding: 80px 0;
+}
+
+.fees__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fees__info {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.fees__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+}
+
+.fees__item {
+    text-align: center;
+}
+
+.fees__item .card__icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question {
+    padding: 80px 0;
+    background-color: #123D88;
+}
+
+.question__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question__info {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.question__info .intro__title {
+    color: #fff;
+}
+
+.question__info .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq {
+    padding: 80px 0;
+}
+
+.faq__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 94px;
+    align-items: center;
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq__info {
+    order: 2;
+}
+
+.faq__list {
+    order: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+}
+
+.faq__item {
+    padding: 40px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.faq__item .card__icon {
+    margin-left: auto;
+    margin-right: auto;
+}
