@@ -88,6 +88,17 @@ img {
 
 /* index.html
 ------------------------------ */
+.header__inner {
+    max-width: 1000px;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.main__inner {
+    max-width: 1000px;
+    width: 80%;
+    margin-inline: auto;
+}
 
 /* about.html
 ------------------------------ */
