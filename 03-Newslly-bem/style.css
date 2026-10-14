@@ -94,7 +94,19 @@ img {
     margin-inline: auto;
 }
 
-.main__inner {
+.news__inner {
+    max-width: 1000px;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.news__inner {
+    max-width: 1000px;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.trending__inner {
     max-width: 1000px;
     width: 80%;
     margin-inline: auto;
