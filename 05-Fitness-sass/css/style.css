@@ -1,0 +1,33 @@
+.header__inner {
+  max-width: 1488px;
+  width: 80.6451612903%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .gnav ul {
+  display: flex;
+}
+
+.welcome__inner {
+  max-width: 1488px;
+  width: 80.6451612903%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team__inner {
+  max-width: 1488px;
+  width: 80.6451612903%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__inner {
+  max-width: 1488px;
+  width: 80.6451612903%;
+  margin-left: auto;
+  margin-right: auto;
+}/*# sourceMappingURL=style.css.map */

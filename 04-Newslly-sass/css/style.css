@@ -1,0 +1,17 @@
+body {
+  color: #888;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.btn {
+  background-color: #fa6980;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
