@@ -1,7 +1,15 @@
 @use 'sass:math';
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: math.div(32, 20);
 
-body {}
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+}
 
 @mixin inner($mw: 1488px, $w: percentage(math.div(1200, 1488))) {
     max-width: $mw;
@@ -15,15 +23,55 @@ body {}
         @include inner;
         display: flex;
         justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 100px;
     }
 }
 
 .header .gnav ul {
-    display: flex
+    display: flex;
+    gap: 30px;
+}
+
+.gnav a {
+    font-size: 16px;
+    font-weight: bold
+}
+
+@mixin h2-style {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px
 }
 
 .welcome__inner {
     @include inner;
+    display: grid;
+    grid-template-columns: 620fr 500fr;
+    gap: 80px;
+
+    .pic {
+        display: inline-block;
+
+        p {
+            display: inline-block
+        }
+    }
+}
+
+.welcome__inner .group {
+    margin-block: 30px;
+}
+
+.welcome__inner h2 {
+    @include h2-style;
+}
+
+.welcome__inner h2::after {
+    content: '';
+    display: block;
+    padding-top: 20px;
+    width: 120px;
+    border-bottom: #5EB6E1 2px solid;
 }
 
 .team__inner {
