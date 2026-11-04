@@ -40,7 +40,7 @@ body {
 
 @mixin h2-style {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 32px
+    font-size: 32px;
 }
 
 .welcome__inner {
@@ -64,17 +64,18 @@ body {
 
 .welcome__inner h2 {
     @include h2-style;
+    margin-bottom: 60px;
+
+    &::after {
+        content: '';
+        display: block;
+        padding-top: 20px;
+        width: 120px;
+        border-bottom: #5EB6E1 2px solid;
+    }
 }
 
-.welcome__inner h2::after {
-    content: '';
-    display: block;
-    padding-top: 20px;
-    width: 120px;
-    border-bottom: #5EB6E1 2px solid;
-}
-
-.team__inner {
+.welcome__inner h2 .team__inner {
     @include inner;
 }
 

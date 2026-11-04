@@ -52,8 +52,8 @@ body img {
 .welcome__inner h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 32px;
+  margin-bottom: 60px;
 }
-
 .welcome__inner h2::after {
   content: "";
   display: block;
@@ -62,7 +62,7 @@ body img {
   border-bottom: #5EB6E1 2px solid;
 }
 
-.team__inner {
+.welcome__inner h2 .team__inner {
   max-width: 1488px;
   width: 80.6451612903%;
   margin-left: auto;
