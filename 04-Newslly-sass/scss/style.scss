@@ -2,16 +2,13 @@
 
 $color-text: #888;
 $color-main: #202124;
-$color-accent: #fa6980;
-$color-bg: #f6f6f6;
-$color-label: #bbbbbb;
+$color-accent: #FA6980;
+$color-bg: #F6F6F6;
+$color-time: #BBB;
 
-$font-family-base: Helvetica,
-    Arial,
-    sans-serif;
+$font-family-base: Helvetica, Arial, sans-serif;
 
-// 引数はよく変わるものを最初に設定する（このコメントは出力されない）
-@mixin inner($mw: 800px, $w: percentage(math.div(560, 640))) {
+@mixin inner($mw: 800px, $w: 88%) {
     max-width: $mw;
     width: $w;
     margin-left: auto;
@@ -34,15 +31,16 @@ body {
     font-size: 14px;
     font-family: $font-family-base;
     line-height: math.div(24, 14);
-    letter-spacing: #{math.div(50,1000)}em;
-
-    img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: bottom;
-    }
+    letter-spacing: #{math.div(50, 1000)}em;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* header*/
 .header {
     padding: 30px 0 60px;
     text-align: center;
@@ -52,24 +50,23 @@ body {
     }
 }
 
+/* footer */
 .footer {
     padding: 100px 0 40px;
     background-color: $color-main;
+    color: $color-time;
 
     &__inner {
-        @include inner(1200px);
+        @include inner();
     }
 
-    small {
+    &__copy {
         font-size: 12px;
-        color: #fff;
     }
 }
 
-/* modules
------------------------------- */
+/* post */
 .post {
-
     &__category {
         margin-bottom: 10px;
         color: $color-accent;
@@ -84,9 +81,16 @@ body {
         font-size: 18px;
         font-weight: bold;
         line-height: math.div(23, 18);
+
+        &--border {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
     }
 }
 
+/* card */
 .card {
     background-color: #fff;
 
@@ -100,45 +104,45 @@ body {
         font-size: 18px;
         font-weight: bold;
         line-height: math.div(23, 18);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
-.time {
-    margin-top: 20px;
-    padding-left: 26px;
-    color: $color-label;
-    font-size: 12px;
-    background: url(../images/icon_time.png) no-repeat left center;
-}
-
+/* btn */
 .btn {
     display: block;
-    width: 160px;
+    width: rem(160);
     margin-top: 25px;
     margin-left: auto;
     padding: 14px;
     background-color: $color-accent;
     color: #fff;
-    font-size: 12px;
+    font-size: rem(12);
     font-weight: bold;
     text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
 
-    &:hover {
+    &--info {
         background-color: $color-main;
-    }
-
-    &--more {
-        background-color: $color-main;
-
-        &:hover {
-            background-color: $color-text;
-        }
     }
 }
 
+/* time */
+.time {
+    margin-top: 20px;
+    padding-left: 26px;
+    color: $color-time;
+    font-size: 12px;
+    background: url(../images/icon_time.png) no-repeat left center;
+}
+
 /* index.html
------------------------------- */
+---------------------------*/
+/* news */
 .news {
     padding-bottom: 60px;
 
@@ -157,6 +161,7 @@ body {
     }
 }
 
+/* trending */
 .trending {
     padding: 60px 0;
     background-color: $color-bg;
@@ -172,34 +177,29 @@ body {
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 60px percentage(math.div(40, 800));
+        column-gap: percentage(math.div(40, 800));
     }
 }
 
 /* about.html
------------------------------- */
+---------------------------*/
 .blog {
-    padding-bottom: 60px;
-
+    padding: 0 0 60px;
 
     &__inner {
         @include inner();
     }
 
-    &__list {
-        display: grid;
-        gap: 60px percentage(math.div(40, 800));
-    }
-
     &__item {
-        .post__title {
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #DDDDDD;
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
 
+/* discovery */
 .discovery {
     padding: 60px 0;
     background-color: $color-bg;
@@ -215,6 +215,6 @@ body {
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 60px percentage(math.div(40, 800));
+        column-gap: percentage(math.div(40, 800));
     }
 }
