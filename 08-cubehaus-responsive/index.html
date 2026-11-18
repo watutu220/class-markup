@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBE HAUS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css/destyle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a class="header__logo-link" href="./index.html">CUBE HAUS</a>
+            </h1>
+            <nav class="g-nav" aria-label="グローバルナビゲーション">
+                <ul class="g-nav__list">
+                    <li class="g-nav__item">
+                        <a class="g-nav__link g-nav__link--current" href="./index.html" aria-current="page">
+                            COMPANY
+                        </a>
+                    </li>
+                    <li class="g-nav__item">
+                        <a class="g-nav__link" href="#philosophy">MISSION</a>
+                    </li>
+                    <li class="g-nav__item">
+                        <a class="g-nav__link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="mainvisual">
+            <div class="mainvisual__inner">
+                <picture class="mainvisual__pic">
+                    <source media="(width >= 700px)" srcset="./images/pic_main_pc.png">
+                    <img class="mainvisual__image" src="./images/pic_main_sp.png" alt="白い建築と水面が広がる静かな空間を歩く人" width="580" height="560">
+                </picture>
+            </div>
+        </div>
+
+        <section class="philosophy" id="philosophy">
+            <div class="philosophy__inner">
+                <div class="section-header">
+                    <h2 class="section-header__title">経営理念</h2>
+                </div>
+                <div class="philosophy__content">
+                    <p class="philosophy__text">
+                        日々の喧騒から解放される静かな空間で、<wbr>
+                        自分らしい豊かな時間をお過ごしください。<wbr>
+                        私たちが大切にしているのは、<wbr>
+                        暮らしの本質を見つめ、<wbr>
+                        家族との対話に心から集中できる、<wbr>
+                        洗練された「器」としての家をご提供することです。
+                    </p>
+                    <p class="philosophy__text">
+                        優れたデザインは、<wbr>
+                        何気ない日常を<wbr>
+                        より豊かで特別なものに変える力があります。<wbr>
+                        皆様の人生という物語の素敵な舞台となれることを、<wbr>
+                        心より願っております。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="works">
+            <div class="works__inner">
+                <div class="section-header">
+                    <h2 class="section-header__title">制作実績</h2>
+                </div>
+                <div class="works__list">
+                    <article class="works__item card">
+                        <div class="card__pic">
+                            <img class="card__image" src="./images/pic_works01.png" alt="大きな窓を設けた白い住宅の外観" width="580" height="300" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">光と風の抜ける家</h3>
+                            <p class="card__text">
+                                白を基調としたミニマルな空間。
+                                大きな窓から光が差し込む、開放感あふれる住まい。
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="works__item card">
+                        <div class="card__pic">
+                            <img class="card__image" src="./images/pic_works02.png" alt="ガラス窓と濃色の外壁が特徴的な住宅の外観" width="580" height="300" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">空と繋がるコートハウス</h3>
+                            <p class="card__text">
+                                プライバシーを守りながら、空を独り占めできる中庭。
+                                家族の時間が豊かになる設計。
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="works__item card">
+                        <div class="card__pic">
+                            <img class="card__image" src="./images/pic_works03.png" alt="椅子とテーブルを置いた屋根付きのウッドデッキ" width="580" height="300" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">ウッドデッキのある家</h3>
+                            <p class="card__text">
+                                セカンドリビングやBBQスペース、子供・ペットの遊び場などに幅広く活用できます。
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <div class="schedule__inner">
+                <div class="section-header">
+                    <h2 class="section-header__title" id="schedule-title">営業時間</h2>
+                </div>
+                <div class="schedule__scroll" role="region" aria-labelledby="schedule-title" aria-describedby="schedule-note" tabindex="0">
+                    <table class="schedule__table" aria-labelledby="schedule-title">
+                        <thead class="schedule__head">
+                            <tr class="schedule__row">
+                                <th class="schedule__heading" scope="col">曜日</th>
+                                <th class="schedule__heading" scope="col">LUNCH</th>
+                                <th class="schedule__heading" scope="col">DINNER</th>
+                            </tr>
+                        </thead>
+                        <tbody class="schedule__body">
+                            <tr class="schedule__row">
+                                <th class="schedule__heading" scope="row">月曜日</th>
+                                <td class="schedule__cell">11:30 - 15:00 (L.O. 14:30)</td>
+                                <td class="schedule__cell">18:00 - 22:00 (L.O. 21:00)</td>
+                            </tr>
+                            <tr class="schedule__row">
+                                <th class="schedule__heading" scope="row">火曜日</th>
+                                <td class="schedule__cell">11:30 - 15:00 (L.O. 14:30)</td>
+                                <td class="schedule__cell">18:00 - 22:00 (L.O. 21:00)</td>
+                            </tr>
+                            <tr class="schedule__row">
+                                <th class="schedule__heading" scope="row">水曜日</th>
+                                <td class="schedule__cell">定休日</td>
+                                <td class="schedule__cell">定休日</td>
+                            </tr>
+                            <tr class="schedule__row">
+                                <th class="schedule__heading" scope="row">木曜日</th>
+                                <td class="schedule__cell">11:30 - 15:00 (L.O. 14:30)</td>
+                                <td class="schedule__cell">18:00 - 22:00 (L.O. 21:00)</td>
+                            </tr>
+                            <tr class="schedule__row">
+                                <th class="schedule__heading" scope="row">金曜日</th>
+                                <td class="schedule__cell">11:30 - 15:00 (L.O. 14:30)</td>
+                                <td class="schedule__cell">18:00 - 24:00 (L.O. 23:00)</td>
+                            </tr>
+                            <tr class="schedule__row">
+                                <th class="schedule__heading" scope="row">土曜日</th>
+                                <td class="schedule__cell">11:30 - 16:00 (L.O. 15:30)</td>
+                                <td class="schedule__cell">18:00 - 24:00 (L.O. 23:00)</td>
+                            </tr>
+                            <tr class="schedule__row">
+                                <th class="schedule__heading" scope="row">日曜日</th>
+                                <td class="schedule__cell">定休日</td>
+                                <td class="schedule__cell">定休日</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="schedule__note" id="schedule-note">※横にスクロールできます。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__copyright">
+                <small>© 2007 CUBE HAUS INC.</small>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
